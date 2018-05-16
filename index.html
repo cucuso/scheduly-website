@@ -1,0 +1,269 @@
+<html>
+
+<head>
+    <title>The state of the art calendar that notifies your customers with text. | Unas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <style>
+        .logo {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        h1 {
+            margin-top: 150px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h2,
+        h1 {
+            color: white;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        p {
+            color: #798697;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #97c0b7;
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        label {
+            color: #798697;
+        }
+
+        
+    </style>
+
+    <script>
+        $(window).bind('scroll', function () {
+
+            var scrollTop = $(window).scrollTop();
+
+            if (scrollTop < 100) {
+                $('.logo').show();
+                $('.logo').css({
+                    'opacity': (1)
+                });
+            }
+            else if (scrollTop < 200) {
+                $('.logo').show();
+                $('.logo').css({
+                    'opacity': (.40)
+                });
+
+            } else {
+                $('.logo').hide();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Unas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#overview">Overview
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#download">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="height:100%; background-color:#97c0b7;">
+            <div class="col-md-4 ethos" style="margin-left:150px; margin-top:200px;">
+                <h2>The state of the art calendar that notifies your customers with text.</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:250px" id="overview">
+        <div class="row">
+            <div class="col-md-6 section">
+                <div class="section-title">
+                    A scheduler for
+                    <b>today's world.</b>
+                </div>
+
+                <br>
+                <p>
+                    Life now a days is hectic. We spend all day on the go. And most of the time we do not have time to answer a call. We might
+                    be in the middle of a meeting, or order food etc. Todays world demands a new way of reminding customers
+                    when their meeting is coming up. And what is more unobtrusive than a text. You know it wont be lost like
+                    an email, or a call, but they will open it on their own terms.
+                </p>
+            </div>
+            <div class="offset-md-2 col-md-4 text-right">
+                <img src="running.png" style="width:450px">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top:250px; background: url('money.png'); background-repeat: no-repeat;  background-size: cover; padding-top:70px;" id="pricing">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center" style="color:white">
+                    Plans and
+                    <b>Pricing</b>
+                </div>
+                <div class="container">
+                    <div class="row" style="margin-top:100px; margin-bottom:75px;">
+                        <div class="card  col-md-5" style="width: 18rem; height:400px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Free Version</h3>
+                                <hr />
+                                <p class="card-text">
+                                    If you do not wish to use the text notifications use <b>Unas</b> calendar free of
+                                    charge for as long as you like. No strings attached. 
+
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card offset-md-2 col-md-5" style="width: 18rem; height:400px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Paid Version</h3>
+                                <hr />
+                                <p class="card-text">
+                                    In order to cover the text message fees we charge $9.99 a month, or pay
+                                    the full year for $99.99. Both options will allow for unlimited text message notifications.                       
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- TODO look at the http://paletton.com/ it htelps with the color schemas-->
+    <div class="container-fluid" style="padding:40px;" id="download">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    Download Now!
+                </div>
+                <div class="row" style="margin-top:100px; margin-bottom:75px;">
+                    Coming soon..
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#50735E; padding-top:70px; margin-top:250px;" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="section-title text-center" style="color:white; margin-bottom:50px;">
+                    Contact
+                    <b>Us</b>
+                </div>
+
+                <div class="offset-md-3 col-md-6 card" style="padding:20px; margin-bottom:60px;">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Tell us what you think:</label>
+                            <textarea class="form-control" id="comments" rows="8" name="message"></textarea>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" id="submitContact">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <img src="bg2.png" class="logo" style="width:650px">
+
+    </div>
+    </div>
+
+</body>
+<script>
+    // JavaScript
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.logo');
+    sr.reveal('.ethos', { duration: 600 });
+    sr.reveal('.card');
+</script>
+<script>
+
+
+
+    $("#submitContact").click(function () {
+
+
+        console.log(getFormData($('#contact-form')));
+
+        $.ajax({
+            url: "http://localhost:8080/contact",
+            type: "POST",
+            data: JSON.stringify(getFormData($('#contact-form'))),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function () {
+                alert(data);
+            }
+        })
+    });
+
+    function getFormData($form) {
+        var unindexed_array = $form.serializeArray();
+        var indexed_array = {};
+
+        $.map(unindexed_array, function (n, i) {
+            indexed_array[n['name']] = n['value'];
+        });
+
+        return indexed_array;
+    }
+</script>
+
+</html>
