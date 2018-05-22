@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -13,69 +14,9 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-    <style>
-        .logo {
-            position: fixed;
-            bottom: 0px;
-            right: 0px;
-        }
 
-        h1 {
-            margin-top: 150px;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        h2,
-        h1 {
-            color: white;
-            font-family: 'Roboto Slab', serif;
-        }
-
-        p {
-            color: #798697;
-        }
-
-        .section-title {
-            font-size: 2em;
-            color: #97c0b7;
-        }
-
-        .section {
-            margin-top: 25px;
-        }
-
-        label {
-            color: #798697;
-        }
-
-        
-    </style>
-
-    <script>
-        $(window).bind('scroll', function () {
-
-            var scrollTop = $(window).scrollTop();
-
-            if (scrollTop < 100) {
-                $('.logo').show();
-                $('.logo').css({
-                    'opacity': (1)
-                });
-            }
-            else if (scrollTop < 200) {
-                $('.logo').show();
-                $('.logo').css({
-                    'opacity': (.40)
-                });
-
-            } else {
-                $('.logo').hide();
-            }
-        });
-    </script>
+    <script src="js/main.js" type="text/javascript"></script>
+    
 </head>
 
 <body>
@@ -130,7 +71,7 @@
                 </p>
             </div>
             <div class="offset-md-2 col-md-4 text-right">
-                <img src="running.png" style="width:450px">
+                <img src="img/running.png" style="width:450px">
             </div>
         </div>
     </div>
@@ -220,7 +161,7 @@
         </div>
     </div>
 
-    <img src="bg2.png" class="logo" style="width:650px">
+    <img src="img/smiling.png" class="logo" style="width:650px">
 
     </div>
     </div>
