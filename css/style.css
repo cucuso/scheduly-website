@@ -10,6 +10,7 @@ h1 {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
 h2,
@@ -51,9 +52,6 @@ label {
 
 #pricing {
   margin-top: 250px;
-  background: url('money.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 70px;
 }
 
@@ -128,7 +126,7 @@ label {
 }
 
 #price-card {
-  min-height: 300px;
+  min-height: 400px;
 }
 
 #price-card .title {
@@ -222,4 +220,28 @@ label {
 .contact-title {
   color: white;
   margin-bottom: 50px;
+}
+
+.platforms {
+  padding-top:60px
+}
+
+.platform-name {
+  color: #282828;
+  font-size: 14px;
+  font-weight: 600;
+  margin:25px;
+}
+
+.section p {
+   line-height: 2em;
+}
+
+.details li {
+  margin-top: 10px;
+  line-height: 2em;
+}
+
+#submitContact {
+  float: right;
 }
