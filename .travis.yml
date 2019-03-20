@@ -1,9 +1,7 @@
-language: node_js
-node_js:
-- 9
-install:
-  - pip install --user awscli
-script: exit 0
+language: python
+python: '2.7'
+install: true
+script: true
 deploy:
   provider: s3
   access_key_id: AKIAJVF46MNZ7SUUD5IQ
