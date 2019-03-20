@@ -1,4 +1,4 @@
-# bongo-website
+# Scheduly Website
 
 ## Configuring project
 
