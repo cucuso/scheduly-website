@@ -1,20 +1,17 @@
 $(window).bind('scroll', function () {
   var scrollTop = $(window).scrollTop();
-  var isVisible = $('#smiling').is(':visible');
-  if (isVisible && scrollTop < 100 ) {
-    $('.smiling').show();
-    $('.smiling').css({
+  if (scrollTop < 100 ) {
+    $('.calendar-img').show();
+    $('.calendar-img').css({
       opacity: 1
     });
-  } else if (isVisible && scrollTop < 200 ) {
-    $('.smiling').show();
-    $('.smiling').css({
+  } else if ( scrollTop < 200 ) {
+    $('.calendar-img').show();
+    $('.calendar-img').css({
       opacity: 0.4
     });
   } else {
-    $('.smiling').css({
-      opacity: 0
-    });
+    $('.calendar-img').hide();
   }
 });
 

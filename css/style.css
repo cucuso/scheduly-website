@@ -1,5 +1,5 @@
 
-#smiling {
+#calendar-img {
   display: none;
 }
 
@@ -13,7 +13,7 @@
 }
 
 @media screen and (min-width: 990px) {
-  #smiling {
+  #calendar-img {
     display: block;
     position: fixed;
     bottom: 0px;
@@ -63,7 +63,7 @@ p {
 
 .section-title {
   font-size: 2em;
-  color: #97c0b7;
+  color: #0b3e69;
 }
 
 .section {
@@ -76,7 +76,7 @@ label {
 
 .ethos-row {
   height: 100%;
-  background-color: #97c0b7;
+  background-color: #0b3e69;
 }
 
 .ethos {
@@ -94,7 +94,7 @@ label {
 }
 
 .navbar {
-  background-color: #97c0b7;
+  background-color: #0b3e69;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -116,7 +116,7 @@ label {
 
 
 #pricing {
-  background-color: #97c0b7;
+  background-color: #0b3e69;
 }
 
 .plan {
@@ -262,4 +262,11 @@ label {
 
 #submitContact {
   float: right;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.6); }
+
+.fa-location-arrow {
+  margin-left:5px;
 }
