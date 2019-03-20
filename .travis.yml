@@ -1,7 +1,9 @@
 language: node_js
 node_js:
-  - "8"
-dist: trusty
+- 9
+install:
+  - pip install --user awscli
+script: exit 0
 deploy:
   provider: s3
   access_key_id: AKIAJVF46MNZ7SUUD5IQ
