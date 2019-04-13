@@ -1,5 +1,5 @@
 # Scheduly Website
-
+[![Build Status](https://travis-ci.org/cucuso/scheduly-website.svg?branch=master)](https://travis-ci.org/cucuso/scheduly-website)
 ## Configuring project
 
 install aws cli in order to quickly deploy to s3
