@@ -10,14 +10,19 @@
 
         gtag('config', 'UA-120469503-1');
     </script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The state of the art calendar that notifies your customers with text. | Scheduly</title>
     <link rel="shortcut icon" type="image/png" href="img/icon.ico" />
+    <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -25,9 +30,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="js/glide.min.js"></script>
 </head>
 
 <body>
+    <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">Scheduly</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -38,8 +45,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#overview">Overview
-                    </a>
+                    <a class="nav-link" href="#overview">Why Scheduly?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#walkthrough">How it works</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#pricing">Pricing</a>
@@ -47,29 +56,32 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#download">Try Now</a>
                 </li>
-
-
             </ul>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row ethos-row">
+    <!-- END OF NAVIGATION -->
+
+
+    <div class="container-fluid ethos-bg">
+        <div class="row ">
             <div class="col-md-4 ethos">
                 <h2>The state of the art scheduler that notifies your customers with text.</h2>
             </div>
         </div>
     </div>
 
-    <div class="container" id="overview">
+
+    <!-- PITCH -->
+    <div class="container-fluid pitch-container" id="overview">
         <div class="row">
-            <div class="col-md-6 section">
+            <div class="col-md-6">
                 <div class="section-title">
                     A scheduler for
                     <b>today's world.</b>
                 </div>
 
-                <br>
                 <p>
+                    <br>
                     Nowadays life is hectic. We spend all day on the go. And most of the time we don't have time to
                     even answer a call. We might
                     be in the middle of a meeting, ordering food etc. Today's world demands a new way of reminding
@@ -77,6 +89,11 @@
                     when their meeting is coming up. Surprise your customers with a friendly reminder via text message.
                     And
                     free up your secretary to do more meaningful work than calling every appointment to confirm.
+                    <br>
+                    <br>
+                    Click <a href="#download">Try Now</a> and sign up to get 15 days for free. You will be able to
+                    add appointments and those customers will be notified the day before their appointment via text
+                    message.
                 </p>
             </div>
             <div class="offset-md-2 col-md-4 text-right">
@@ -84,10 +101,63 @@
             </div>
         </div>
     </div>
+    <!-- END OF PITCH -->
 
+    <!-- HOW IT WORKS -->
+    <div class="container-fluid howitworks-container" id="walkthrough">
+        <div class="row">
+            <div class="offset-md-4 col-md-4 text-center howitworks-title">
+
+                How it
+                <b>works</b>
+
+            </div>
+            <div class="col-md-12">
+                <div class="glide">
+                    <div data-glide-el="controls">
+                        <button class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev"
+                            data-glide-dir="<">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <button class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next"
+                            data-glide-dir=">">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div data-glide-el="track" class="glide__track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide text-center">
+                                <img class="img-walkthrough" src="img/1.jpg">
+                                <p>
+                                    Double click on date of appointment you scheduled...
+                                </p>
+                            </li>
+                            <li class="glide__slide text-center">
+                                <img class="img-walkthrough" src="img/2.jpg">
+                                <p>
+                                    Add all the information, description of appointment, phone number, etc...
+                                </p>
+                            </li>
+                            <li class="glide__slide text-center">
+                                <img class="img-walkthrough" src="img/3.jpg">
+                                <p>
+                                    Wait for them to get reminder the day before, and come in the day of the appointment!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF HOW IT WORKS -->
+
+    <!-- start of pricing section -->
     <div class="container-fluid" id="pricing">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 pricing-section">
                 <div class="section-title text-center pricing-title">
                     Plans and
                     <b>Pricing</b>
@@ -108,7 +178,6 @@
                                     <ul>
                                         <li>Use the Calendar free of charge</li>
                                         <li>No Ads</li>
-
                                     </ul>
                                 </div>
                             </div>
@@ -151,29 +220,31 @@
                                         <li>Service will keep track of appointments and notify by text the day before.
                                         </li>
                                         <li>Unlimited text notifications</li>
-
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of pricing section -->
 
+    <div class="container-fluid" id="download">
+        <div class="row">
+            <div class="col-md-12 try-now-section">
+                <div class="section-title text-center">
+                    Start your free trial now
+
+                    <a href="app">
+                        <i class="fas fa-location-arrow grow"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid" style="padding:340px;" id="download">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    Start your free trial now  <a href="app"> <i class="fas fa-location-arrow grow"></i></a>
-                </div>
-            </div>
-        </div>
-
-
-        </div>
     </div>
     </div>
     </div>

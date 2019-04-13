@@ -48,3 +48,11 @@ sr.reveal('.logo');
 sr.reveal('.plan', { duration: 600 });
 sr.reveal('.platform-card');
 sr.reveal('#contact-card');
+
+// INIT GLIDE CAROUSEL
+var glide = new Glide('.glide', {
+  type: 'slider',
+  autoplay: 4000
+});
+
+glide.mount()
