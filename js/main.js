@@ -51,8 +51,7 @@ sr.reveal('#contact-card');
 
 // INIT GLIDE CAROUSEL
 var glide = new Glide('.glide', {
-  type: 'slider',
-  autoplay: 4000
+  type: 'slider'
 });
 
 glide.mount()
