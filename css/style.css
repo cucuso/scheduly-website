@@ -67,24 +67,39 @@ p {
 .howitworks-container {
   padding-top: 50px;
   padding-bottom: 200px;
-  background-color: #0084d4;
+  background-color: #c9f2ff;
   ;
 }
 
 .howitworks-title {
   font-size: 2em;
-  color: #fff;
+  color: #000;
   padding-bottom: 150px;
 }
 
 .try-now-section {
-  margin-top: 400px;
-  margin-bottom: 400px;
+  margin-top: 370px;
+  margin-bottom: 340px;
 }
 
 .pricing-section {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+
+.social-media {
+  color:#fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.social-media a {
+  color: #fff;
+}
+
+.social-media a:hover {
+  color: rgb(113, 142, 223);
 }
 
 label {
@@ -101,7 +116,7 @@ label {
   margin-top: 200px;
 }
 
-.bg-color {
+.bg-blue {
   background-color: #0b3e69;
 }
 
@@ -322,4 +337,13 @@ label {
 
 .glide__slide > p {
   color:white;
+}
+
+.fa-dot-circle {
+  color:red;
+}
+
+.howto-bullet {
+  font-weight: bold;
+  color:#000;
 }
