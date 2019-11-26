@@ -1,44 +1,59 @@
 #calendar-img {
   display: none;
+  max-width: 1200px;
 }
 
 #busy {
   width: 100%;
 }
 
+.div-demog-img {
+  padding-left: 30px;
+  padding-right:30px;
+  padding-top:20px;
+}
+
 #demo-img {
-  width: 120%;
-  border-radius:10px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom:40px;
+}
+
+.howto-text {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
   color: rgb(219, 216, 216);
 }
 
-@media screen and (min-width: 990px) {
-  #calendar-img {
-    display: block;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-  }
-  .nav-link:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
-    color: white;
-  }
+#calendar-img {
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  opacity: .7;
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
+  color: white;
 }
 
 h1 {
@@ -65,20 +80,24 @@ p {
 }
 
 .pitch-container {
-  padding-top: 100px;
-  padding-bottom: 300px;
+  margin-top: 200px;
+  padding-bottom: 200px;
 }
 
 .howitworks-container {
   padding-top: 50px;
   padding-bottom: 200px;
-  background-color: #F4F6F7;
-  ;
+  background: rgba(248, 253, 255, 0.774);
+}
+
+.testimonials-container {
+  padding-top: 50px;
+  padding-bottom: 200px;
 }
 
 .howitworks-title {
   font-size: 2em;
-  color: #000;
+  color: #0b3e69;
   padding-bottom: 130px;
 }
 
@@ -92,9 +111,8 @@ p {
   margin-bottom: 100px;
 }
 
-
 .social-media {
-  color:#fff;
+  color: #fff;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -113,20 +131,40 @@ label {
 
 .ethos-bg {
   height: 100%;
-  background-color: #0b3e69;
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top, #0B3E69 0%, #0F5794 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #0B3E69 0%, #0F5794 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #0B3E69 0%, #0F5794 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0B3E69), color-stop(100, #0F5794));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #0B3E69 0%, #0F5794 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom, #0B3E69 0%, #0F5794 100%);
+  z-index: -2000;
 }
 
-.ethos {
-  margin-left: 150px;
-  margin-top: 200px;
+.testimonials-bg {
+  background: #fff;
+}
+
+@media screen and (min-width: 990px) {
+  .ethos {
+    margin-left: 150px;
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .ethos {
+    display: none;
+  }
 }
 
 .bg-blue {
   background-color: #0b3e69;
-}
-
-#overview {
-  margin-top: 250px;
 }
 
 .navbar {
@@ -148,7 +186,7 @@ label {
 }
 
 #pricing {
-  background-color: #0b3e69;
+  background-color: #05315517;
 }
 
 .plan {
@@ -177,6 +215,7 @@ label {
 
 #price-card {
   min-height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #price-card .title {
@@ -258,23 +297,7 @@ label {
 }
 
 .pricing-title {
-  color: white;
-}
-
-.contact-title {
-  color: white;
-  margin-bottom: 50px;
-}
-
-.platforms {
-  padding-top: 60px
-}
-
-.platform-name {
-  color: #282828;
-  font-size: 14px;
-  font-weight: 600;
-  margin: 25px;
+  color:#0b3e69;
 }
 
 .section p {
@@ -302,53 +325,16 @@ label {
   margin-left: 5px;
 }
 
-.slider__arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  width: 44px;
-  height: 44px;
-  margin-top: -9px;
-  border-radius: 50%;
-  background-color: #818999;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  -webkit-box-shadow: 0 0.5rem 4rem 0 rgba(0, 0, 0, .5);
-  box-shadow: 0 0.5rem 4rem 0 rgba(0, 0, 0, .5);
-}
-
-.glide__arrow {
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-  outline: 0;
-  color:#fff;
-}
-
-.slider__arrow--next {
-  right: 1.5rem;
-  color:#fff;
-}
-
-.slider__arrow--prev {
-  left: 1.5rem;
-  color:#fff;
-}
-
-.img-walkthrough{
+.img-walkthrough {
   max-width: 15%;
   max-height: 15%;
 }
 
-.glide__slide > p {
-  color:white;
-}
-
 .fa-dot-circle {
-  color:red;
+  color: rgb(14, 55, 133);
 }
 
 .howto-bullet {
   font-weight: bold;
-  color:#000;
+  color: #0b3e69;
 }
