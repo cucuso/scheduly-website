@@ -313,12 +313,10 @@ label {
   float: right;
 }
 
-.grow {
-  transition: all .2s ease-in-out;
-}
+.trial-link:hover .trial-arrow {transform: scale(1.3);}
 
-.grow:hover {
-  transform: scale(1.6);
+.trial-arrow {
+  transition: all .2s ease-in-out;
 }
 
 .fa-location-arrow {
