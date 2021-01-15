@@ -90,7 +90,7 @@ p {
 .howitworks-container {
   padding-top: 50px;
   padding-bottom: 200px;
-  background: rgba(248, 253, 255, 0.774);
+  background: #0e558f0c;
 }
 
 .testimonials-container {
@@ -98,10 +98,15 @@ p {
   padding-bottom: 200px;
 }
 
+.benefits-container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
 .howitworks-title {
   font-size: 2em;
   color: #0b3e69;
-  padding-bottom: 130px;
+  padding-bottom: 50px;
 }
 
 .try-now-section {
@@ -153,16 +158,14 @@ label {
   background: #fff;
 }
 
+.testimonial {
+  margin-bottom:50px;
+}
+
 @media screen and (min-width: 990px) {
   .ethos {
     margin-left: 150px;
-    margin-top: 200px;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  .ethos {
-    display: none;
+    margin-top: 50px;
   }
 }
 
@@ -190,6 +193,14 @@ label {
 }
 
 #pricing {
+  background-color: #fff;
+}
+
+#benefits {
+  background-color: #0e558f0c;
+}
+
+#download {
   background-color: #0e558f0c;
 }
 
@@ -339,6 +350,9 @@ label {
 }
 
 .howto-bullet {
-  font-weight: bold;
   color: #0b3e69;
+}
+
+.benefits-container .howto-bullet b {
+  font-size: 20px;
 }
